@@ -4,6 +4,8 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <RootNamespace>xampp_apache_rightclick_cd</RootNamespace>
+    <StartupObject>xampp_apache_rightclick_cd.Program</StartupObject>
+    <ApplicationIcon />
   </PropertyGroup>
 
 </Project>

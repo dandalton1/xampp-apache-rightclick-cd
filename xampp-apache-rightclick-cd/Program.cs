@@ -18,13 +18,11 @@ namespace xampp_apache_rightclick_cd
          **/
         static bool Debug = false;
 
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
             try
             {
                 string wd = Directory.GetCurrentDirectory();
-
-                Console.WriteLine("Working directory: " + wd);
 
                 Parser p = new Parser(httpd_conf, wd, Debug);
 
@@ -34,7 +32,9 @@ namespace xampp_apache_rightclick_cd
             } catch (Exception e)
             {
                 err(e);
+                return 1;
             }
+            return 0;
         }
 
         static void err(Exception e)
@@ -42,7 +42,6 @@ namespace xampp_apache_rightclick_cd
             Console.Error.WriteLine("ERROR: " + e.Message);
             Console.Error.WriteLine(e.StackTrace);
             pause();
-            
         }
 
         static void pause()
