@@ -1,5 +1,6 @@
 # xampp-apache-rightclick-cd
-A right-click context-menu item helper that'll swap XAMPP's Apache's directory with a newly desired directory.
+A right-click context-menu item helper that'll swap XAMPP's Apache's directory with a newly desired directory,
+and then restart Apache to update its configuration.
 
 # Installation
 
@@ -36,7 +37,16 @@ The program depends on `httpd.conf` to be in `C:\xampp\apache\httpd.conf`.
 If you'd like to change where this is, simply change the required variable in `Program.cs`
 and recompile.
 
+# `httpd.exe` location
+
+The program depends on `httpd.exe` (the Apache host process) to be in `C:\xampp\apache\bin\httpd.exe`.
+If you'd like to change where this is, simply change the required variable in `Program.cs`
+and recompile.
+
 # Dependencies
+
+XAMPP is required (as it's meant to change XAMPP settings). For easier use, use XAMPP's default location
+on your C drive (`C:\xampp`).
 
 Due to being in C#, the .NET environment (specifically, version 2.1) is required.
 The DLLs necessary for it to run are attached in the release zip files.
