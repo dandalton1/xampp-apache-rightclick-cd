@@ -24,3 +24,25 @@ A right-click context-menu item helper that'll swap XAMPP's Apache's directory w
 
 Unfortunately, this installation guide is complicated and probably could be automated in the future.
 
+# Usage
+
+It's meant to simply be ran in the folder that you wish to be the new document root.
+For example: Say your document root used to be `C:\a` and you want it to be `C:\b`.
+Run the program from within `C:\b` (using a right-click helper would do this automatically).
+
+# `httpd.conf` location
+
+The program depends on `httpd.conf` to be in `C:\xampp\apache\httpd.conf`.
+If you'd like to change where this is, simply change the required variable in `Program.cs`
+and recompile.
+
+# Dependencies
+
+Due to being in C#, the .NET environment (specifically, version 2.1) is required.
+The DLLs necessary for it to run are attached in the release zip files.
+
+The Hardware Requirements aren't any more strict than the ones for .NET Core,
+besides the fact that it must be running on Windows (at the time being).
+
+For a full list, see [https://docs.microsoft.com/en-us/dotnet/core/windows-prerequisites?tabs=netcore2x]
+(this list from Microsoft).
