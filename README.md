@@ -5,7 +5,7 @@ A right-click context-menu item helper that'll swap XAMPP's Apache's directory w
 
 1.  Extract the release `.zip` file somewhere (maybe `C:\xampp-apache-rightclick-cd\` will suffice)
 2.  Open the Windows Registry (you can do so by hitting `Win`+`R`, then typing `regedit`)
-3.  Navigate to `\HKEY_CLASSES_ROOT\Directory\shell`.
+3.  Navigate to `\HKEY_CLASSES_ROOT\Directory\Background\shell`.
 4.  Right-click on `shell`, then click to make a New -> Key.
 5.  Name this new key `xampp-apache-rightclick-cd`.
 6.  Double click `Default`.
