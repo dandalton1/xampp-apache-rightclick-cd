@@ -54,4 +54,4 @@ The DLLs necessary for it to run are attached in the release zip files.
 The Hardware Requirements aren't any more strict than the ones for .NET Core,
 besides the fact that it must be running on Windows (at the time being).
 
-For a full list, see (https://docs.microsoft.com/en-us/dotnet/core/windows-prerequisites?tabs=netcore2x)[this list from Microsoft].
+For a full list, see [this list from Microsoft](https://docs.microsoft.com/en-us/dotnet/core/windows-prerequisites?tabs=netcore2x).
